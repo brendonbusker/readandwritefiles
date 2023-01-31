@@ -3,8 +3,8 @@ import csv
 
 
 #Constants
-#EMPLOYEEPAY = r"D:\CODE\Python\AdvancedPython\readandwritefiles\EmployeePay.csv"
-EMPLOYEEPAY = "EmployeePay.csv"
+EMPLOYEEPAY = r"D:\CODE\Python\AdvancedPython\readandwritefiles\EmployeePay.csv"
+#EMPLOYEEPAY = "EmployeePay.csv"
 
 
 #Main
@@ -18,12 +18,15 @@ def main():
     for row in reader:
         employee_pay_list.append(row)
 
-    print(format("ID", "<2"), format("EmpFName", "<18"), format("EmpLName", "<18"), format("Salary", "<6"), format("Bonus", "<5"))
-    print(format("--", "<2"), format("-" * 18, "<18"), format("-" * 18, "<18"), format("------", "<6"), format("-----", "<5"))
+    print(format("ID", "<2"), format("EmpFName", "<18"), format("EmpLName", "<18"), format("Salary", "<6"), format("Bonus", "<5"), format("Total Pay", "<9"))
+    print(format("--", "<2"), format("-" * 18, "<18"), format("-" * 18, "<18"), format("------", "<6"), format("-----", "<5"), format("---------", "<9"))
 
     for i in range(0, len(employee_pay_list)):
         print(format(employee_pay_list[i][0], "<2"), format(employee_pay_list[i][1], "<18"), format(employee_pay_list[i][2], "<18"),
-            format(employee_pay_list[i][3], "<6"), format(employee_pay_list[i][4], "<5"))
+            format(employee_pay_list[i][3], "<6"), format(employee_pay_list[i][4], "<5"),
+            format((float(employee_pay_list[i][3]) * float(employee_pay_list[i][4])) + float(employee_pay_list[i][3]), "<8"))
+
+        pause = input("Press any key for next employee...")
 
     infile.close()
 
