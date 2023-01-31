@@ -3,10 +3,10 @@ import csv
 
 
 #Constants
-CUSTFILE = r"D:\CODE\Python\AdvancedPython\readandwritefiles\customers.csv"
-NAMECOUNTRYFILE = r"D:\CODE\Python\AdvancedPython\readandwritefiles\customer_country.csv"
-#CUSTFILE = "customers.csv"
-#NAMECOUNTRYFILE = "customer_country.csv"
+#CUSTFILE = r"D:\CODE\Python\AdvancedPython\readandwritefiles\customers.csv"
+#NAMECOUNTRYFILE = r"D:\CODE\Python\AdvancedPython\readandwritefiles\customer_country.csv"
+CUSTFILE = "customers.csv"
+NAMECOUNTRYFILE = "customer_country.csv"
 
 
 #Main

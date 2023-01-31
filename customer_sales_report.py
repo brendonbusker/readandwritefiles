@@ -3,8 +3,11 @@ import csv
 
 
 #Constants
-SALESFILE = r"D:\CODE\Python\AdvancedPython\readandwritefiles\sales.csv"
-SALESREPORTFILE = r"D:\CODE\Python\AdvancedPython\readandwritefiles\salesreport.csv"
+#SALESFILE = r"D:\CODE\Python\AdvancedPython\readandwritefiles\sales.csv"
+#SALESREPORTFILE = r"D:\CODE\Python\AdvancedPython\readandwritefiles\salesreport.csv"
+SALESFILE = "sales.csv"
+SALESREPORTFILE = "salesreport.csv"
+
 
 #Main
 def main():

@@ -3,7 +3,9 @@ import csv
 
 
 #Constants
-EMPLOYEEPAY = r"D:\CODE\Python\AdvancedPython\readandwritefiles\EmployeePay.csv"
+#EMPLOYEEPAY = r"D:\CODE\Python\AdvancedPython\readandwritefiles\EmployeePay.csv"
+EMPLOYEEPAY = "EmployeePay.csv"
+
 
 #Main
 def main():
@@ -22,6 +24,8 @@ def main():
     for i in range(0, len(employee_pay_list)):
         print(format(employee_pay_list[i][0], "<2"), format(employee_pay_list[i][1], "<18"), format(employee_pay_list[i][2], "<18"),
             format(employee_pay_list[i][3], "<6"), format(employee_pay_list[i][4], "<5"))
+
+    infile.close()
 
 #Call Main
 main()
